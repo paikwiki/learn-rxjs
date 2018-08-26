@@ -1,0 +1,22 @@
+{
+  "name": "learn-rxjs",
+  "version": "1.0.0",
+  "description": "* Sources from [Learn RxJS](https://www.learnrxjs.io/) by [@btroncone](https://twitter.com/BTroncone)",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src --out-dir build",
+    "start": "node"
+  },
+  "author": "paikwiki",
+  "license": "",
+  "dependencies": {
+    "rxjs": "^6.2.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
