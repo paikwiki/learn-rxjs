@@ -14,15 +14,15 @@ const combined = combineLatest(timerOne, timerTwo, timerThree);
 const subscribe = combined.subscribe(
   ([timerValOne, timerValTwo, timerValThree]) => {
     /*
-      Example:
+    Example:
     timerOne first tick: 'Timer One Latest: 1, Timer Two Latest:0, Timer Three Latest: 0
     timerTwo first tick: 'Timer One Latest: 1, Timer Two Latest:1, Timer Three Latest: 0
     timerThree first tick: 'Timer One Latest: 1, Timer Two Latest:1, Timer Three Latest: 1
-  */
+    */
     console.log(
       `Timer One Latest: ${timerValOne},
-     Timer Two Latest: ${timerValTwo},
-     Timer Three Latest: ${timerValThree}`,
+      Timer Two Latest: ${timerValTwo},
+      Timer Three Latest: ${timerValThree}`,
     );
   },
 );
